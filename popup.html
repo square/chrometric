@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>Square Telemetry</title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      font-size: 75%;
+    }
+
+    button {
+      height: 30px;
+      width: 80px;
+      outline: none;
+    }
+
+    #status {
+      /* avoid an excessively wide status text */
+      white-space: pre;
+    }
+  </style>
+  <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  <script src="background.js"></script>
+  <script src="chrometric.js"></script>
+  <script src="speedtest.js"></script>
+  <script src="speedtest_worker.js"></script>
+</head>
+
+<body>
+  <button id="runSpeedtest">Run Test</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+  <img id="image-result" hidden>
+</body>
+
+</html>

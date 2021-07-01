@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "dataLoggerConfig": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "speedtestUrls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "server": {
+            "type": "string"
+          },
+          "dlURL": {
+            "type": "string"
+          },
+          "ulURL": {
+            "type": "string"
+          },
+          "pingURL": {
+            "type": "string"
+          },
+          "getIpURL": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

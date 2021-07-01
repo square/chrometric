@@ -1,0 +1,17 @@
+{
+  "debug": false,
+  "dataLoggerConfig": {
+    "name": "humio",
+    "ingestToken": "INGEST_TOKEN_HERE"
+  },
+  "speedtestUrls": [
+    {
+      "name": "Openspeed Public",
+      "server": "SPEEDTEST_URL_HERE",
+      "dlURL": "garbage.php",
+      "ulURL": "empty.php",
+      "pingURL": "empty.php",
+      "getIpURL": "getIP.php"
+    }
+  ]
+}

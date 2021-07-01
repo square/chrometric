@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Chrometric",
+  "description": "Collects network telemetry and other metrics for determining ChromeOS health",
+  "version": "1.2.0",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js",
+      "chrometric.js",
+      "humio.js",
+      "speedtest.js",
+      "speedtest_worker.js",
+      "chrome-extension-async.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "declarativeContent",
+    "alarms",
+    "https://*/*",
+    "http://*/*",
+    "storage",
+    "system.cpu",
+    "system.memory",
+    "enterprise.deviceAttributes",
+    "identity",
+    "identity.email"
+  ],
+  "storage": {
+    "managed_schema": "schema.json"
+  },
+  "icons": {
+    "16": "images/speed16.png",
+    "32": "images/speed32.png",
+    "48": "images/speed48.png",
+    "128": "images/speed128.png"
+  },
+  "minimum_chrome_version": "66"
+}
