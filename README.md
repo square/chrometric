@@ -1,7 +1,7 @@
 Chrometric
 ==========
 
-This extension gethers metrics on ChromeOS devices and ships the data back to an ingestion endpoint.
+This extension gathers metrics on ChromeOS devices and ships the data back to an ingestion endpoint.
 
 For this extension to be useful, a LibreSpeed sleedtest endpoint must be hosted on the infrastructure to be tested against. The [Go version of librespeedtest](https://github.com/librespeed/speedtest-go) is perhaps the easiest way to stand this up, with other options being available on the [LibreSpeed repo](https://github.com/librespeed).
 
