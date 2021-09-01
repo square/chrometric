@@ -7,6 +7,7 @@ For this extension to be useful, a LibreSpeed speedtest endpoint must be hosted 
 
 Configuration
 ---
+
 To configure the extension, one must apply a policy for it within Google Admin. After adding Chrometric to the console, a policy similar the one below must be added under **Policy for extensions**.
 
 Here is an example policy:
@@ -41,23 +42,26 @@ Releases are provided on the Github releases page, however if a manual release i
 
 In order to publish this extension to a private Chrome Web Store, a zip file will need to be created. Use the following process to do so:
 
-```
+```bash
 zip -r ../chrometric-x.x.x.zip ./* -x ".git*"
 ```
 
 Be sure to change `x.x.x` to the actual version being zipped, which can be found in `manifest.json`
 
-#### ToDo
-* Add directions for customizing the bundle with a data logger before creating the zip
+ToDo
+---
 
+* Add directions for customizing the bundle with a data logger before creating the zip
 
 Thanks
 ---
+
 Many thanks to the [LibreSpeed Project](https://github.com/librespeed), without which this idea would not have worked as well as it has. Also thanks to [Mark Gewurz](https://github.com/markgewurz) for the inspiration and [Graham Gilbert](https://github.com/grahamgilbert) for his work on [chromesal](https://github.com/salopensource/chromesal), which was very instructive on using ChromeOS APIs.
 
 License
 -------
 
+```text
     Copyright 2020 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -71,3 +75,4 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+```
